@@ -1,9 +1,11 @@
+import PropTypes from 'prop-types';
 import css from '../Profile/Profile.module.css';
-import Description from 'components/Description/Description';
 
 
 
-const Profile = ({username, 
+
+const Profile = ({
+  username, 
   tag, 
   location, 
   avatar, 
@@ -14,12 +16,13 @@ const Profile = ({username,
 },}) => {
   return(
 <div className={css.Profile}>
-  <Description className={css.Description}
-  img={avatar}
-  tag={tag}
-  location={location}
+<div className={css.Description}>
+    <img src={avatar} alt="User avatar" className="avatar"/>
+    <p className="name">{username}</p>
+    <p className="tag">{tag}</p>
+    <p className="location">{location}</p>
+  </div>
   
-  />
 
   <ul className="stats">
     <li>
@@ -38,5 +41,10 @@ const Profile = ({username,
 </div>
   )  
 };
+
+Profile.PropTytles= {
+  username: PropTypes.string.isRequired,
+
+}
 
 export default Profile;

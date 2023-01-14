@@ -12,7 +12,8 @@ import Profile from "./components/Profile/Profile";
     tag={user.tag}
     location={user.location}
     avatar={user.avatar}
-    stats={user.stats}/>
+    stats={user.stats}
+    />
     
      </>
   );
