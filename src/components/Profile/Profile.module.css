@@ -1,0 +1,72 @@
+.avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.section {
+    width: 250px;
+    padding-top: 15px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    text-align: center;
+    
+}
+
+.Description {
+text-align: center;
+}
+
+
+.name  {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgba(128,128,128, 1);
+}
+.tag  {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgba(128,128,128, 0.5);
+}
+
+.location  {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgba(128,128,128, 0.5);
+}
+
+.stats {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    
+    list-style: none;
+}
+
+.label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgba(128,128,128, 1);  
+}
+
+.quantity {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgba(128,128,128, 0.5);
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(128,128,128, 0.5); ;
+    width: 90px;
+    height: 90px;
+}
+
+.item:not(:last-child) {
+    border-right: 1px solid grey;
+}
+

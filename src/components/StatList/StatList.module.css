@@ -1,0 +1,10 @@
+.list {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.statistics {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
