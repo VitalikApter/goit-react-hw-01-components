@@ -1,0 +1,12 @@
+.container {
+margin: 0 auto 0;
+width: 200px;
+background-color: white;
+margin-top: 50px;
+}
+
+
+.list {
+    list-style: none;
+    padding: 0;
+}

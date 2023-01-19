@@ -1,0 +1,19 @@
+.item {
+    align-items: center;
+    color: #fff;
+    display: flex;
+    flex: 1 1;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+
+.label {
+    font-weight: bold;
+    text-shadow: 0 0 2px #000;
+}
+
+.percentage {
+    font-weight: bold;
+}
