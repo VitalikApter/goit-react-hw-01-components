@@ -1,0 +1,24 @@
+.history {
+    width: 400px;
+    margin: 0 auto;
+  }
+
+  th {
+    padding: 5px 0;
+  
+    background-color: #00bfd7;
+    color: #fff;
+    border: 1px solid grey;
+  }
+  
+  table {
+    font-size: 14px;
+    border-collapse: collapse;
+    border: 1px solid grey;
+  }
+  td {
+    padding: 5px 0;
+    border: 1px solid grey;
+    text-align: center;
+    background-color: #fff;
+  }
