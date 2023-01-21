@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import TransactionItem from './TransactionItem/TransactionItem';
 import css from './TransactionHistory.module.css';
 
-const TransactionHistory = props => {
+const TransactionHistory = ({items}) => {
     return (
         <table className={css.history}>
   <thead>
@@ -14,10 +14,10 @@ const TransactionHistory = props => {
   </thead>
 
   <tbody>
-    {props.items.map((transaction, index) => (
-        <TransactionItem key={transaction.id} {...transaction}
-        rowColor={index % 2 ? 'light' : 'dark' }/>
+    {items.map(({id, type, amount, currency}) => (
+      <TransactionItem key={id} type={type} amount={amount} currency={currency}></TransactionItem>
     ))}
+    
   </tbody>
 </table>
     );
@@ -30,8 +30,11 @@ export default TransactionHistory;
 TransactionHistory.propTypes = {
     props: PropTypes.shape({
       items: PropTypes.arrayOf(
-        PropTypes.shape({
+        PropTypes.exact({
           id: PropTypes.string.isRequired,
+          type: PropTypes.string.isRequired,
+          amount: PropTypes.number.isRequired,
+          currency: PropTypes.number.isRequired,
         })
       ),
     }),

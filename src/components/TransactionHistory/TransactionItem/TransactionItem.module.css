@@ -1,6 +1,12 @@
-.light {
-    background: #ffffff;
-  }
-  .dark {
-    background: #ebf1f4;
-  }
+.item {
+  height: 30px;
+}
+
+.item:nth-child(odd) {
+  background-color: aquamarine;
+}
+
+
+.item:nth-child(even) {
+  background-color: bisque;
+}

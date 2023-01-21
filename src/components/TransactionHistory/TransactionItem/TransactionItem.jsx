@@ -1,13 +1,13 @@
 import PropTypes from 'prop-types';
-import css from './TransactionItem.module.css';
+import css from './TransactionItem.module.css'
 
 
-const TransactionItem = ({type, amount, currency, rowColor}) => {
+const TransactionItem = ({type, amount, currency,}) => {
     return (
-        <tr>
-    <td className={css.rowColor}>{type}</td>
-    <td className={css.rowColor}>{amount}</td>
-    <td className={css.rowColor}>{currency}</td>
+        <tr className={css.item}>
+    <td>{type}</td>
+    <td>Number({amount})</td>
+    <td>{currency}</td>
   </tr>
     )
 };
@@ -18,5 +18,4 @@ TransactionItem.propTypes = {
     type: PropTypes.string.isRequired,
     amount: PropTypes.string.isRequired,
     currency: PropTypes.string.isRequired,
-    rowColor: PropTypes.string,
-}
+    };
